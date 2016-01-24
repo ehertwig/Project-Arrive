@@ -1,5 +1,44 @@
+body {
+	font-size: 40px;
+}
+
 .media-object {
 	height: 300px;
 	width: inherit;
 		
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 400px;
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen only (max-width: 768px) {
+	body {margin-bottom: 400px;}
+	footer{height: 400px;}
+}
+
+.footer a {
+	color: #1362ce;
+	
+}
+
+.footer a:hover{
+	color: aqua;
 }
