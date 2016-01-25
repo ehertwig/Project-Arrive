@@ -1,13 +1,42 @@
 body {
-	font-size: 40px;
-}
-
-.media-object {
-	height: 300px;
-	width: inherit;
+	font-size: 16px;
+	font-family: "Noto Sans", sans-serif;
+    overflow: scroll;
+	
 		
 }
 
+.navbar {
+	margin-bottom: 20px;
+}
+
+.jumbotron {
+	height: 600px;
+    
+	background-color: hsla(210, 78%, 37%, 0.73);
+	background-image: url(/images/mamasfishhouse.jpg);
+	opacity: .75;
+}
+
+h1 {
+	opacity: .9;
+}
+.media {
+	max-width: 900px;
+	margin: 50px auto;
+	font-size: 105%;
+}
+.media-object {
+	padding-right: 30px;
+  	height: 200px;
+	width: auto;
+	
+}
+
+img {
+	height: 180px;
+	width: 180px;
+}	
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -17,22 +46,26 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+
 }
+
 .footer {
-  position: absolute;
+  
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 400px;
+  height: 220px;
   background-color: #333;
   color: #fff;
+  font-family: "Noto Sans", sans-serif;
 }
 
 @media screen only (max-width: 768px) {
-	body {margin-bottom: 400px;}
+	body {margin-bottom: 200px;}
 	footer{height: 400px;}
 }
+
 
 .footer a {
 	color: #1362ce;
