@@ -5,7 +5,11 @@ body {
 }
 
 .navbar {
-	margin-bottom: 20px;
+	margin-bottom: 100px;
+}
+
+.navbar.home {
+	margin-bottom: 0;
 }
 
 .navbar-inverse {
@@ -87,6 +91,34 @@ h2.text-center {
 }
 
 
+/*-------------vacation page------------------*/
+
+.row.vacation {
+	margin-bottom: 80px;
+}
+
+.col-xs-12.col-sm-6,
+.lead {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.col-xs-12.col-sm-6 p {
+	text-align: left;
+}
+
+.hidden-xs.col-sm-3 {
+	margin: 0 auto;
+}
+
+img.img-circle {
+	border: 5px solid #eee;
+	height: 200px;
+	width: 200px;
+	padding: auto;
+}
+
+
 /* -----------pack list page -----------------*/
 
 .airplane {
@@ -132,7 +164,6 @@ html {
 
 body {
 	/* Margin bottom by footer height */
-	margin-bottom: 50px;
 }
 
 .footer {
@@ -160,12 +191,12 @@ i {
 
 .col-md-4.pull-right {}
 
-@media screen only (max-width: 768px) {
+@media screen and (max-width: 895px) {
 	body {
 		margin-bottom: 200px;
 	}
 	footer {
-		height: 400px;
+		height: 600px;
 	}
 }
 
