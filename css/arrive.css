@@ -1,7 +1,6 @@
 body {
 	font-size: 16px;
-	font: overflow: scroll;
-	background-color: hsl(212, 57%, 85%);
+	background-color: hsl(226, 29%, 94%);
 }
 
 .navbar {
@@ -16,8 +15,20 @@ body {
 	background-color: #555;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+	color: deepskyblue;
+}
+
 a.navbar-brand {
 	margin-right: 100px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: deepskyblue;
+}
+
+.navbar-header {
+	float: none;
 }
 
 .jumbotron {
@@ -25,13 +36,11 @@ a.navbar-brand {
 	background-repeat: no-repeat;
 	background-color: hsla(210, 78%, 37%, 0.73);
 	background-image: url(/images/mauibeach.jpg);
-	opacity: .;
 }
 
 .jumbotron .container {
 	float: left;
 	padding: 200px 0 0 60px;
-	opacity: 1;
 	font: bold;
 }
 
@@ -60,7 +69,7 @@ blockquote {
 
 .media {
 	max-width: 900px;
-	margin: 50px auto;
+	margin: 100px auto 400px auto;
 }
 
 .media-body {
@@ -108,14 +117,26 @@ h2.text-center {
 }
 
 .hidden-xs.col-sm-3 {
+	margin: 50px auto 0;
+}
+
+.img-circle.img-responsive {
 	margin: 0 auto;
 }
 
 img.img-circle {
-	border: 5px solid #eee;
+	border: 5px solid #fff;
 	height: 200px;
 	width: 200px;
 	padding: auto;
+}
+
+.btn.btn-primary.btn-lg {
+	margin-top: 25px;
+}
+
+.btn.btn-info.ice {
+	margin-top: 25px;
 }
 
 
@@ -154,6 +175,16 @@ p.list-group-item-text {
 }
 
 
+/* -----------------travel page-------------------*/
+
+.travel.well.well-lg {
+	margin-top: 100px;
+	margin-bottom: 300px;
+	background-color: hsl(209, 70%, 89%);
+	padding: auto 60px;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -167,17 +198,13 @@ body {
 }
 
 .footer {
-	position: ;
 	bottom: 0;
 	width: 100%;
-	/* Set the fixed height of the footer here */
 	height: 220px;
 	background-color: #333;
 	color: #fff;
 	font-family: "Noto Sans", sans-serif;
 }
-
-.footer.container {}
 
 .row.footer {
 	width: inherit;
@@ -189,22 +216,21 @@ i {
 	font-family: "Nota Sans", sans-serif;
 }
 
-.col-md-4.pull-right {}
-
 @media screen and (max-width: 895px) {
-	body {
-		margin-bottom: 200px;
+	.footer {
+		height: 350px;
 	}
-	footer {
-		height: 600px;
-	}
+}
+
+.col-md-4.pull-right {
+	margin-top: 20px;
 }
 
 .footer a {
-	color: #b8bbf4;
+	color: deepskyblue;
 }
 
 .footer a:hover {
-	color: #daecf4;
+	color: #fff;
 	text-decoration: none;
 }

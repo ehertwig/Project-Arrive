@@ -9,7 +9,7 @@
 	<title>Arrive At Last</title>
 
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=+27px' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/arrive.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 
@@ -20,37 +20,82 @@
 </head>
 
 <body>
-	<nav>
-		<div class="container">
-			<ul class="pull-right">
-				<li><a href="home.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li class="dropdown">
-					<a href="before.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BEFORE YOU GO <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="pack.html">Airplane Pack List</a></li>
-						<li><a href="travel.html">Travel Often?</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="booknow.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BOOK NOW            <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">Funjet Vacations</a></li>
-					</ul>
-		</div>
-	</nav>
- <div class= "travel well">
-	  <h2 class="text-center">Hands Up! Hands down. </h2>
-	<p class="lead">Remember the days when you could stroll through security without your arms in a "Stick 'em up!" style?</p> <p> When you could leave your shoes and jacket on and walk through the detectors with your dignity still intact? Awe, those days are back! Well, kind of, as long as you pay off the Federal Government. To the tune of $85 you may have the privilege to enter a special line at airport security called <a href="https://www.tsa.gov/tsa-precheck" target="_blank"> TSA Precheck</a>. Yes, you really can keep your belts on! And, no need to unpack your laptop or 3-1-1 liquids.</p>
-	<p>If you like this option and you travel internationally, you may want to ante up $15 more and upgrade to <a href="http://www.cbp.gov/travel/trusted-traveler-programs/global-entry" target="_blank">Global Entry</a>. This program expedites your return to the U.S. with special lines at passport control, plus no filling out the blue declaration card. TSA Precheck is automatically included with enrollment. Yippee!</p>
-	<p>Both programs are good for 5 years. If you have a fancy credit card, such as an American Express Platinum card, or a Citi Prestige, your enrollment fee for either program is reimbursed.</p>
 
+	<div class="navbar navbar-inverse home">
+		<div class="container-full">
+			<div class="navbar-header">
+				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a href="home.html" class="navbar-brand">Arrive At Last</a>
+				<div class="navbar-collapse collapse pull-right">
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="home.html#contact">CONTACT</a></li>
+						<li class="dropdown">
+							<a href="before.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria- expanded="false">BEFORE YOU GO <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="pack.html">Airplane Pack List</a></li>
+								<li class="divider"></li>
+								<li><a href="travel.html">Travel Often?</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="booknow.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BOOK NOW<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">Funjet Vacations</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	</div>
+
+	<div class="travel well well-lg">
+		<h2 class="text-center">Hands Up vs. Hands down. </h2>
+		<p>Remember the days when you could stroll through security without your arms in a "Stick 'em up!" style? When you could leave your shoes and jacket on and walk through the detectors with your dignity still intact? Awe, those days are back! Well, kind of, as long as you pay off the Federal Government. To the tune of $85 you may have the privilege to enter a special line at airport security called <a href="https://www.tsa.gov/tsa-precheck" target="_blank"> TSA Precheck</a>. Yes, you really can keep your belts on! And, no need to unpack your laptop or 3-1-1 liquids.</p>
+		<p>If you like this option and you travel internationally, you may want to ante up $15 more and upgrade to <a href="http://www.cbp.gov/travel/trusted-traveler-programs/global-entry" target="_blank">Global Entry</a>. This program expedites your return to the U.S. with special lines at passport control, plus no filling out the blue declaration card. TSA Precheck is automatically included with enrollment. Yippee!</p>
+		<p>Both programs are good for 5 years. If you have a fancy credit card, such as an American Express Platinum card, or a Citi Prestige, your enrollment fee for either program is reimbursed.</p>
+
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
-<footer>
+<div class="footer">
+	<div class="container-full">
+		<div class="row footer">
+			<div class="col-md-4 pull-left">
+				<h4><a name = "contact"></a>Contact Me</h4>
+				<p class='font'>
+					<a href="http://glyphicons.com/"></a><i class="glyphicon glyphicon-plane">  Elizabeth Hertwig</i></p>
+				<p><i class="glyphicon glyphicon-globe"> St. Louis, MO</i></p>
+				<p><i class="glyphicon glyphicon-phone"> 314.401.5669</i></p>
+				<p><i class="glyphicon glyphicon-envelope"> elizabeth@arriveatlast.com</i></p>
+			</div>
+			<div class="col-md-4">
+				<h4>Links</h4>
+				<ul class="list-unstyled">
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="pack.html">PACK LIST</a></li>
+					<li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">FUNJET VACATIONS</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 pull-right">
+				<ul class="list-unstyled">
+					<li>Florida Seller of Travel Ref. No. ST15578 </li>
+					<li>California Seller of Travel No. 2090937-50 </li>
+					<li>Washington UBID No. 603189022</li>
+					<li>Iowa Registered Agency # 1202</li>
+				</ul>
+			</div>
 
-</footer>
+		</div>
+	</div>
+</div>
 
 </html>
