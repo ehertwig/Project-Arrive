@@ -1,236 +1,271 @@
-body {
-	font-size: 16px;
-	background-color: hsl(226, 29%, 94%);
-}
-
-.navbar {
-	margin-bottom: 100px;
-}
-
-.navbar.home {
-	margin-bottom: 0;
-}
-
-.navbar-inverse {
-	background-color: #555;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-	color: deepskyblue;
-}
-
-a.navbar-brand {
-	margin-right: 100px;
-}
-
-.navbar-inverse .navbar-brand {
-	color: deepskyblue;
-}
-
-.navbar-header {
-	float: none;
-}
-
-.jumbotron {
-	height: 700px;
-	background-repeat: no-repeat;
-	background-color: hsla(210, 78%, 37%, 0.73);
-	background-image: url(/images/mauibeach.jpg);
-}
-
-.jumbotron .container {
-	float: left;
-	padding: 200px 0 0 60px;
-	font: bold;
-}
-
-.author {
-	text-align: right;
-	font-size: 80%;
-}
-
-blockquote {
-	line-height: 1.8;
-	font-size: 100%;
-	text-align: center;
-	margin-bottom: 30px
-}
-
-.row.image {
-	margin-bottom: 60px;
-}
-
-.col-md-4.text-center {
-	margin-bottom: inherit;
-}
-
-
-/*--------------about page-----------*/
-
-.media {
-	max-width: 900px;
-	margin: 100px auto 400px auto;
-}
-
-.media-body {
-	padding-left: 20px;
-}
-
-.media-object {
-	height: 200px;
-	width: auto;
-}
-
-img {
-	height: 180px;
-	width: 180px;
-}
-
-h2.text-center {
-	margin-bottom: 30px;
-}
-
-.travel {
-	margin: 0 auto;
-	max-width: 730px;
-}
-
-.travel p {
-	margin-bottom: 20px;
-}
-
-
-/*-------------vacation page------------------*/
-
-.row.vacation {
-	margin-bottom: 80px;
-}
-
-.col-xs-12.col-sm-6,
-.lead {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.col-xs-12.col-sm-6 p {
-	text-align: left;
-}
-
-.hidden-xs.col-sm-3 {
-	margin: 50px auto 0;
-}
-
-.img-circle.img-responsive {
-	margin: 0 auto;
-}
-
-img.img-circle {
-	border: 5px solid #fff;
-	height: 200px;
-	width: 200px;
-	padding: auto;
-}
-
-.btn.btn-primary.btn-lg {
-	margin-top: 25px;
-}
-
-.btn.btn-info.ice {
-	margin-top: 25px;
-}
-
-
-/* -----------pack list page -----------------*/
-
-.airplane {
-	margin: 60px 0 30px 0;
-}
-
-.pack {
-	margin: 0 auto;
-	max-width: 730px;
-}
-
-.list-group {
-	margin: 0 auto;
-	max-width: 730px;
-}
-
-.packlist {
-	margin-bottom: 30px;
-}
-
-h4.list-group-item-heading {
-	color: #3e4650;
-	font-weight: 600;
-	border: 1px double #b4afaf;
-	border-left: none;
-	border-right: none;
-	padding: 4px;
-	margin-bottom: 10px;
-}
-
-p.list-group-item-text {
-	margin-bottom: 15px;
-}
-
-
-/* -----------------travel page-------------------*/
-
-.travel.well.well-lg {
-	margin-top: 100px;
-	margin-bottom: 300px;
-	background-color: hsl(209, 70%, 89%);
-	padding: auto 60px;
-}
-
-
-/* Sticky footer styles
+                                                                                                                        body {
+                                                                                                                        font-size: 16px;
+                                                                                                                        background-color: hsl(226, 29%, 94%);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar {
+                                                                                                                        margin-bottom: 100px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar.home {
+                                                                                                                        margin-bottom: 0;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar-inverse {
+                                                                                                                        background-color: #555;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar-inverse .navbar-nav > li > a {
+                                                                                                                        color: deepskyblue;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    a.navbar-brand {
+                                                                                                                        margin-right: 100px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar-inverse .navbar-brand {
+                                                                                                                        color: deepskyblue;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .navbar-header {
+                                                                                                                        float: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .jumbotron {
+                                                                                                                        height: 700px;
+                                                                                                                        background-repeat: no-repeat;
+                                                                                                                        background-color: hsla(210, 78%, 37%, 0.73);
+                                                                                                                        background-image: url(/images/mauibeach.jpg);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .jumbotron .container {
+                                                                                                                        float: left;
+                                                                                                                        padding: 200px 0 0 60px;
+                                                                                                                        font: bold;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .author {
+                                                                                                                        text-align: right;
+                                                                                                                        font-size: 80%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    blockquote {
+                                                                                                                        line-height: 1.8;
+                                                                                                                        font-size: 100%;
+                                                                                                                        text-align: center;
+                                                                                                                        margin-bottom: 30px
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .row.image {
+                                                                                                                        margin-bottom: 60px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .col-md-4.text-center {
+                                                                                                                        margin-bottom: inherit;
+                                                                                                                    }
+                                                                                                                    /*--------------about page-----------*/
+                                                                                                                    
+                                                                                                                    .media {
+                                                                                                                        max-width: 900px;
+                                                                                                                        margin: 100px auto 150px auto;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .media-body {
+                                                                                                                        padding-left: 20px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .media-object {
+                                                                                                                        height: 200px;
+                                                                                                                        width: auto;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    img {
+                                                                                                                        height: 180px;
+                                                                                                                        width: 180px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .drop-photo {
+                                                                                                                        list-style: none;
+                                                                                                                        display: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .carousel.slide {
+                                                                                                                        width: 30%;
+                                                                                                                        margin: 0 auto 20%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .item img {
+                                                                                                                        width: 500px;
+                                                                                                                        height: auto;
+                                                                                                                        border: solid #fff 7px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .item p {
+                                                                                                                        font-style: italic;
+                                                                                                                        padding-left: 15px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    h2.text-center {
+                                                                                                                        margin-bottom: 30px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .travel {
+                                                                                                                        margin: 0 auto;
+                                                                                                                        max-width: 730px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .travel p {
+                                                                                                                        margin-bottom: 20px;
+                                                                                                                    }
+                                                                                                                    /*-------------vacation page------------------*/
+                                                                                                                    
+                                                                                                                    .row.vacation {
+                                                                                                                        margin-bottom: 80px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .col-xs-12.col-sm-6,
+                                                                                                                    .lead {
+                                                                                                                        text-align: center;
+                                                                                                                        margin-bottom: 30px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .col-xs-12.col-sm-6 p {
+                                                                                                                        text-align: left;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .hidden-xs.col-sm-3 {
+                                                                                                                        margin: 50px auto 0;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .img-circle.img-responsive {
+                                                                                                                        margin: 0 auto;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    img.img-circle {
+                                                                                                                        border: 5px solid #fff;
+                                                                                                                        height: 200px;
+                                                                                                                        width: 200px;
+                                                                                                                        padding: auto;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .btn.btn-primary.btn-lg {
+                                                                                                                        margin-top: 25px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .btn.btn-info.ice {
+                                                                                                                        margin-top: 25px;
+                                                                                                                    }
+                                                                                                                    /* -----------pack list page -----------------*/
+                                                                                                                    
+                                                                                                                    .airplane {
+                                                                                                                        margin: 60px 0 30px 0;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .pack {
+                                                                                                                        margin: 0 auto;
+                                                                                                                        max-width: 730px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .list-group {
+                                                                                                                        margin: 0 auto;
+                                                                                                                        max-width: 730px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .packlist {
+                                                                                                                        margin-bottom: 30px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    h4.list-group-item-heading {
+                                                                                                                        color: #3e4650;
+                                                                                                                        font-weight: 600;
+                                                                                                                        border: 1px double #b4afaf;
+                                                                                                                        border-left: none;
+                                                                                                                        border-right: none;
+                                                                                                                        padding: 4px;
+                                                                                                                        margin-bottom: 10px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    p.list-group-item-text {
+                                                                                                                        margin-bottom: 15px;
+                                                                                                                    }
+                                                                                                                    /* -----------------travel page-------------------*/
+                                                                                                                    
+                                                                                                                    .travel.well.well-lg {
+                                                                                                                        margin-top: 100px;
+                                                                                                                        margin-bottom: 300px;
+                                                                                                                        background-color: hsl(209, 70%, 89%);
+                                                                                                                        padding: auto 60px;
+                                                                                                                    }
+                                                                                                                    /* Sticky footer styles
 -------------------------------------------------- */
-
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-body {
-	/* Margin bottom by footer height */
-}
-
-.footer {
-	bottom: 0;
-	width: 100%;
-	height: 220px;
-	background-color: #333;
-	color: #fff;
-	font-family: "Noto Sans", sans-serif;
-}
-
-.row.footer {
-	width: inherit;
-	padding: 25px;
-}
-
-i {
-	line-height: 1.5;
-	font-family: "Nota Sans", sans-serif;
-}
-
-@media screen and (max-width: 895px) {
-	.footer {
-		height: 350px;
-	}
-}
-
-.col-md-4.pull-right {
-	margin-top: 20px;
-}
-
-.footer a {
-	color: deepskyblue;
-}
-
-.footer a:hover {
-	color: #fff;
-	text-decoration: none;
-}
+                                                                                                                    
+                                                                                                                    html {
+                                                                                                                        position: relative;
+                                                                                                                        min-height: 100%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    body {
+                                                                                                                        /* Margin bottom by footer height */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .footer {
+                                                                                                                        bottom: 0;
+                                                                                                                        width: 100%;
+                                                                                                                        height: 220px;
+                                                                                                                        background-color: #333;
+                                                                                                                        color: #fff;
+                                                                                                                        font-family: "Noto Sans", sans-serif;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .row.footer {
+                                                                                                                        width: inherit;
+                                                                                                                        padding: 25px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    i {
+                                                                                                                        line-height: 1.5;
+                                                                                                                        font-family: "Nota Sans", sans-serif;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .col-md-4.pull-right {
+                                                                                                                        margin-top: 20px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .footer a {
+                                                                                                                        color: deepskyblue;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .footer a:hover {
+                                                                                                                        color: #fff;
+                                                                                                                        text-decoration: none;
+                                                                                                                    }
+                                                                                                                    /*---------------@media-------------------*/
+                                                                                                                    
+                                                                                                                    @media screen and (max-width: 895px) {
+                                                                                                                        .carousel.slide {
+                                                                                                                            width: 30%;
+                                                                                                                            height: 25%;
+                                                                                                                            margin: 0 auto 20%;
+                                                                                                                        }
+                                                                                                                        .footer {
+                                                                                                                            height: 350px;
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    @media (max-width: 490px) {
+                                                                                                                        .media-body {
+                                                                                                                            float: left;
+                                                                                                                            width: 95%;
+                                                                                                                            margin-bottom: 100px;
+                                                                                                                        }
+                                                                                                                        .media-object {
+                                                                                                                            height: 160px;
+                                                                                                                            width: auto;
+                                                                                                                            margin: 0 0 10% 90%;
+                                                                                                                        }
+                                                                                                                        .media {
+                                                                                                                            margin-bottom: 2%;
+                                                                                                                        }
+                                                                                                                        .item img {
+                                                                                                                            border: solid #fff 4px;
+                                                                                                                        }
