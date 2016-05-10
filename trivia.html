@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)http://arriveatlast.com/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html ng-app='trivia' lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Arrive At Last</title>
 
-    
+
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="/images/sunset.ico" rel="icon" type="images/sunset.ico">
@@ -30,12 +33,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a href="http://arriveatlast.com/home.html" class="navbar-brand">Arrive At Last</a>
+                <a href="http://arriveatlast.com/index.html" class="navbar-brand">Arrive At Last</a>
                 <div class="navbar-collapse collapse pull-right">
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="http://arriveatlast.com/home.html">HOME</a></li>
+                        <li><a href="http://arriveatlast.com/index.html">HOME</a></li>
                         <li><a href="http://arriveatlast.com/about.html">ABOUT</a></li>
-                        <li><a href="http://arriveatlast.com/home.html#contact">CONTACT</a></li>
+                        <li><a href="http://arriveatlast.com/form.php">CONTACT</a></li>
                         <li class="dropdown">
                             <a href="http://arriveatlast.com/before.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-="" expanded="false">BEFORE YOU GO <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -48,40 +51,71 @@
                             <a href="http://arriveatlast.com/booknow.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BOOK NOW<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">Funjet Vacations</a></li>
+
                             </ul>
                         </li>
+                        <!--  <li id="google_translate_element"></li><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,bs,de,el,es,en,fa,fr,hi,hr,ht,hu,hy,is,it,iw,ja,ko,lo,ms,no,pa,pt,ro,ru,so,sr,su,sv,sw,te,th,tl,tr,uk,ur,vi,zh-CN,zh-TW,zu', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-76777705-1'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Arrive At Last</h1>
-            <p>A SMARTER WAY TO TRAVEL</p>
+
+
+    <!--  Angular App --->
+    <section class="container">
+        <div id='trivia' ng-controller="QuizController">
+            <h1>Where in the:<span>World?</span></h1>
+            <div class='status'></div>
+            
+            <div class="answered correct"></div>
+            <div class="on"></div>
+            <div></div>
+
+            <div class='intro'>
+                <h2>Welome</h2>
+                <p>Test your world knowledge.</p>
+                <button class='btn btn-success'>Begin</button>
+            </div>
+            <div class='question answered'>
+                <p class='image'>Image here</p>
+                <p class='answer'>Answer1</p>
+                <p class='answer'>Answer2</p>
+                <p class='answer'>Answer3</p>
+                <p class='answer '>Answer4</p>
+                <div class='feedback'>
+                    <p>You are <strong>correct</strong>.</p>
+                    <p>Ooops! That is not correct.</p>
+                    <p>Additional feedback.</p>
+                    <button class='btn'>Continue</button>
+                </div>
+
+
+            </div>
+            <div class='results'>
+                <h3>Results</h3>
+                <p>You scored x% by correctly answering x of the total x questions.</p>
+                <p>Use the links below to challenge your friends.</p>
+                <div class='share'>
+                    <p><a class='btn email' href='#'>Email</a></p>
+                    <p><a class='btn tweet' href='#'>Tweet</a></p>
+                    <p><a class='btn facebook' href='#'>Facebook</a></p>
+
+                </div>
+            </div>
+
+
         </div>
-    </div>
-    <h2><blockquote>"The world is a book, and those who do not travel read only a page."<br><span class="author"> - St. Augustine</span></blockquote></h2>
-    <div class="row image">
-        <div class="col-md-4 text-center">
-            <img src="images/purpleflower.JPG" alt="Hawaii purple flower" class="img-circle">
-            <h2>Hawaii</h2>
-            <p>Paradise Awaits.</p>
-            <p><a class="btn btn-info" href="http://arriveatlast.com/vacation.html#hawaii">View details</a></p>
-        </div>
-        <div class="col-md-4 text-center">
-            <img src="images/resortjamaica.JPG" alt="Mexican resort phot" class="img-circle">
-            <h2>All-Inclusives</h2>
-            <p> No wallet?... No worries!</p>
-            <p><a class="btn btn-info" href="http://arriveatlast.com/vacation.html#all">View details</a></p>
-        </div>
-        <div class="col-md-4 text-center">
-            <img src="images/vernazza.JPG" alt="Cinque Terre Photo" class="img-circle">
-            <h2>Tours</h2>
-            <p>Explore In Comfort</p>
-            <p><a class="btn btn-info" href="http://arriveatlast.com/vacation.html#tours">View details</a></p>
-        </div>
-    </div>
+
+
+    </section>
+
+
+
 
     <div class="footer">
         <div class="container-full">
@@ -97,7 +131,7 @@
                 <div class="col-md-4 col-sm-6">
                     <h4>Links</h4>
                     <ul class="list-unstyled">
-                        <li><a href="http://arriveatlast.com/home.html">HOME</a></li>
+                        <li><a href="http://arriveatlast.com/index.html">HOME</a></li>
                         <li><a href="http://arriveatlast.com/about.html">ABOUT</a></li>
                         <li><a href="http://arriveatlast.com/pack.html">PACK LIST</a></li>
                         <li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">FUNJET VACATIONS</a></li>
@@ -115,10 +149,15 @@
             </div>
         </div>
     </div>
+    <script src="js/money.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/arrive.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/arrive.js"></script>
+    <script src="js/trivia.js"></script>
 
 
+</body>
 
-</body></html>
+</html>
