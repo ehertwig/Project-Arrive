@@ -350,6 +350,7 @@ background-color: rgba(238,189,102,.2);
 
 #trivia .results .share {
     margin-top: 40px;
+    display: inline;
     
 }
 
@@ -373,7 +374,7 @@ background-color: rgba(238,189,102,.2);
 }
 
 #trivia .active, #trivia .inactive {
-    transition:  left 1.5s ease-in-out;
+    transition: left 1.5s ease-in-out;
 }
 
 #trivia .active {
@@ -384,6 +385,90 @@ background-color: rgba(238,189,102,.2);
     left: -1350px;
 }
 
+/*---------media queries for Trivia------------*/
+
+@media screen and (max-width: 650px){
+    .container.trivia{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #trivia {
+        width: 320px;
+        background-size: 320px auto;
+    }
+    
+    #trivia h1 {
+        width: 300px;
+        font-size: 1.3em;
+        top: 25px;
+        left: 25px;
+    }
+    #trivia h1 span {
+        line-height: 43px;
+    }
+    #trivia h2 {
+        margin: 0px;
+    }
+    #trivia h3 {
+        font-size:  2.2em;
+        margin-bottom: 15px;
+    }
+    #trivia .progress {
+        width: 300px;
+        top: 110px;
+        left: 25px;
+    }
+    #trivia .progress div {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        
+    }
+    #trivia .progress div::after {
+        top: -30px;
+        width: 53px;
+        height: 33px;
+    }
+    
+    #trivia .intro {
+        width: 300px;
+        top: 135px;
+        left: 330px;
+    }
+    #trivia .question {
+        width: 300px;
+        top: 135px;
+        left: 330px;
+    }
+    #trivia .question .image{
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+    #trivia .question .answer {
+        font-size: 1em;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    #trivia .results {
+        width: 260px;
+        top: 150px;
+        left: 330px;
+    }
+    #trivia .results .share {
+        margin-top: 20px;
+    }
+    #trivia .results a.btn {
+        margin-bottom: 20px;
+    }
+    
+    #trivia .active {
+        left: 25px;
+    }
+    #trivia .intro.inactive, #trivia .active.answered {
+        left: -650px;
+    }
+}
  /*-------------vacation page------------------*/
  
  .row.vacation {

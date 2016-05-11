@@ -67,12 +67,16 @@ function googleTranslateElementInit() {
 
 
     <!--  Angular App --->
-    <section class="container">
+    <section class="container trivia">
         <div id='trivia' ng-controller="QuizController">
             <h1>Where in the:<span>World?</span></h1>
             
             <div class='status'>
-                <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
+                <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
+                 {{ (myQuestion.questionState === 'answered') ? 'answered' : 'unanswered' }}
+                  {{(myQuestion.correctness === 'correct') ? 'correct' : 'incorrect'}}
+                " 
+                ng-repeat="myQuestion in myQuestions"></div>
             </div>
 
             <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
@@ -95,23 +99,21 @@ function googleTranslateElementInit() {
                    ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
                 
                 <div class='feedback'>
-                    <p>You are <strong>correct</strong>.</p>
-                    <p>Ooops! That is not correct.</p>
-                    <p>Additional feedback.</p>
-                    <button class='btn'>Continue</button>
+                    <p ng-show="myQuestion.correctness === 'correct'" >You are <strong>correct</strong>.</p>
+                    <p ng-show="myQuestion.correctness === 'incorrect'">Ooops! That is not correct.</p>
+                    <p>{{myQuestion.feedback}}</p>
+                    <button class='btn' ng-click="selectContinue()">Continue</button>
                 </div>
 
 
             </div>
-            <div class='results'>
+            <div class="results {{(totalQuestions === activeQuestion) ? 'active' : 'inactive' }}">
                 <h3>Results</h3>
-                <p>You scored x% by correctly answering x of the total x questions.</p>
+                <p>You scored {{percentage}}% by correctly answering {{score}} out of  {{totalQuestions}} total questions.</p>
                 <p>Use the links below to challenge your friends.</p>
-                <div class='share'>
+                <div class='share' ng-bind-html="createShareLinks(percentage)">
                     <p><a class='btn email' href='#'>Email</a></p>
                     <p><a class='btn tweet' href='#'>Tweet</a></p>
-                    <p><a class='btn facebook' href='#'>Facebook</a></p>
-
                 </div>
             </div>
 
