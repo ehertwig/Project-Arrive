@@ -70,23 +70,30 @@ function googleTranslateElementInit() {
     <section class="container">
         <div id='trivia' ng-controller="QuizController">
             <h1>Where in the:<span>World?</span></h1>
-            <div class='status'></div>
             
-            <div class="answered correct"></div>
-            <div class="on"></div>
-            <div></div>
+            <div class='status'>
+                <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
+            </div>
 
-            <div class='intro'>
+            <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
                 <h2>Welome</h2>
                 <p>Test your world knowledge.</p>
-                <button class='btn btn-success'>Begin</button>
+                <button class="btn" ng-click = 'activeQuestion = 0'>Begin</button>
             </div>
-            <div class='question answered'>
-                <p class='image'>Image here</p>
-                <p class='answer'>Answer1</p>
-                <p class='answer'>Answer2</p>
-                <p class='answer'>Answer3</p>
-                <p class='answer '>Answer4</p>
+            <div class="question 
+                {{ $index === activeQuestion ? 'active' : 'inactive'}}
+                 {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" 
+                 
+                 ng-repeat="myQuestion in myQuestions">
+                <p class='image '
+                   ng-class="{image:myQuestion.question}"
+                 ng-style="{'background-image' : 'url({{myQuestion.question}})'}"></p>
+                <p class='answer'
+                   ng-class="{selected:isSelected($parent.$index, $index),              correct:isCorrect($parent.$index, $index)
+                             }"
+                   ng-click="selectAnswer($parent.$index, $index)" 
+                   ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+                
                 <div class='feedback'>
                     <p>You are <strong>correct</strong>.</p>
                     <p>Ooops! That is not correct.</p>
@@ -151,7 +158,7 @@ function googleTranslateElementInit() {
     </div>
     <script src="js/money.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <script src="js/bootstrap.js"></script>
     <script src="js/arrive.js"></script>

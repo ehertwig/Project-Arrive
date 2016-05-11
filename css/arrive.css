@@ -184,7 +184,7 @@ body {
     background-color: #b9430e;
     color: #fff;
 }
-/*---------status------*/
+/*---------status bar------*/
 
 #trivia .status {
     width: 550px;
@@ -201,6 +201,7 @@ body {
     margin-right: 30px;
     border-radius: 50%;
     background-color: rgba(255,255,255,.2);
+    transition: background-color 1s; 
     
 }
 
@@ -209,13 +210,14 @@ body {
     content: '';
     display:block;
     position: absolute;
-    top:-60px;
+    top: -60px;
     left: -15px;
     width: 65px;
     height: 40px;
-    background: url(../images/eiffel.JPG) no reapeat 0px 0px;
+    background: url(../images/ring.svg) no-repeat 0px 0px;
     transition:  opacity 1s, top 1s;
     opacity: 0;
+    
     
 }
 
@@ -251,20 +253,21 @@ body {
 }
 
 #trivia .question .image{
-    
-    
-    
+   height: 150px;
+   width: auto;
+   padding: 0px;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 #trivia .question .answer{
    display: inline-block;
     font-size: 1.1em;
-    width 225px;
+    width : 260px;
     border: 2px solid rgba(238,189,102,.4);
     border-radius: 5px;
     padding: 10px;
     margin: 0 15px 15px 0px;
-    position: relative;
-    
+    position: relative; 
 }
 
 #trivia .question .answer.selected {
@@ -290,10 +293,10 @@ body {
 }
 
 #trivia .question .answer.selected::after {
-  background-image: url(../images/yellowflower.JPG);
+  background-image: url(../images/icon_incorrect.svg);
 }
 #trivia .question .answer.correct::after {
-  background-image: url(../images/purpleflower.JPG);
+  background-image: url(../images/icon_correct.svg);
 }
 
 #trivia .question.unanswered .answer {
@@ -361,12 +364,24 @@ background-color: rgba(238,189,102,.2);
 
 #trivia .results .share a.btn.email {
     background-color: #f0a121;
-    background-image: url(../images/cancunwedding.JPG);
+    background-image: url(../images/icon_email.svg);
 }
 
 #trivia .results .share a.btn.tweet  {
     background-color: #59adeb;
-    background-image: url(../images/bigislandwater.JPG);
+    background-image: url(../images/icon_twitter.svg);
+}
+
+#trivia .active, #trivia .inactive {
+    transition:  left 1.5s ease-in-out;
+}
+
+#trivia .active {
+    left: 40px;
+}
+
+#trivia  .intro.inactive, #trivia.inactive.answered {
+    left: -1350px;
 }
 
  /*-------------vacation page------------------*/
