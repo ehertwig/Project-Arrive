@@ -12,6 +12,7 @@
 
 
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="/images/sunset.ico" rel="icon" type="images/sunset.ico">
     <link href="css/arrive.css" rel="stylesheet">
@@ -80,8 +81,8 @@ function googleTranslateElementInit() {
             </div>
 
             <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
-                <h2>Welome</h2>
-                <p>Test your world knowledge.</p>
+                <h2>Welcome!</h2>
+                <p>Test your world knowledge through images.</p>
                 <button class="btn" ng-click = 'activeQuestion = 0'>Begin</button>
             </div>
             <div class="question 
@@ -108,7 +109,7 @@ function googleTranslateElementInit() {
 
             </div>
             <div class="results {{(totalQuestions === activeQuestion) ? 'active' : 'inactive' }}">
-                <h3>Results</h3>
+                <h2>Results</h2>
                 <p>You scored {{percentage}}% by correctly answering {{score}} out of  {{totalQuestions}} total questions.</p>
                 <p>Use the links below to challenge your friends.</p>
                 <div class='share' ng-bind-html="createShareLinks(percentage)">

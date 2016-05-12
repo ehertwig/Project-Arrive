@@ -142,29 +142,34 @@ body {
  #trivia {
      font-weight: 400;
      width: 650px;
-     height: 650px;
+     height: 700px;
      position: relative;
      overflow: hidden;
      color: #fff;
-     background-color: #333;
+     background-color: #222;
+     background-image: url(../images/globe-background.jpg);
+     background-blend-mode:darken;
      margin: 100px auto;
  }
  
 #trivia h1 {
-    font-weight: 100px;
+    font-weight: 100;
     font-size: 2em;
     text-transform: uppercase;
-    
+    margin: 0px;
     position: absolute;
     top: 25px;
-    left: 36px;
+    left: 40px;
 }
 
 #trivia h1 span {
     display: block;
-    /*font-weight: 900;
+    font-weight: 900;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 3.2em;
-    line-height: 65px;*/
+    line-height: 65px;
+    top: 40px;
+    left: 40px;
     
 }
  #trivia h2 {
@@ -175,14 +180,17 @@ body {
  
  #trivia p {
      margin: 0 0 14px 0;
+     font-weight: 200;
 }
  
 #trivia .btn {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    background-color: #b9430e;
+    background-color: #075684 ;
     color: #fff;
+    padding: 10px;
+    width: 100px;
 }
 /*---------status bar------*/
 
@@ -211,10 +219,10 @@ body {
     display:block;
     position: absolute;
     top: -60px;
-    left: -15px;
+    left: 0px;
     width: 65px;
-    height: 40px;
-    background: url(../images/ring.svg) no-repeat 0px 0px;
+    height: 47px;
+    background: url(../images/globe.svg.png) no-repeat 0px 0px;
     transition:  opacity 1s, top 1s;
     opacity: 0;
     
@@ -223,18 +231,18 @@ body {
 
 #trivia .status div.on,
 #trivia .status div.answered {
-    background-color: #efbe5e;
+    background-color: #071584;
 }
 
 #trivia .status div.correct::after {
-    top: -5px;
+    top: 0px;
     opacity: 1;
 }
 /*-------intro------*/
 
 #trivia .intro {
      position: absolute;
-     top: 225px;
+     top: 300px;
      left: 660px;
      width: 550px;
  }
@@ -253,7 +261,7 @@ body {
 }
 
 #trivia .question .image{
-   height: 150px;
+   height: 200px;
    width: auto;
    padding: 0px;
    background-repeat: no-repeat;

@@ -1,11 +1,11 @@
 [
     {
-        "question" : "/images/eiffel.JPG",
+        "question" : "/images/miami.jpeg",
         "answers":  [
-            {"id" : 0, "text" : "Bangkok, Thailand"},
-            {"id" : 1, "text" : "Osaka, Japan"},
-            {"id" : 2, "text" : "Busan, South Korea"},
-            {"id" : 3, "text" : "Phnom Penh, Cambodia"}
+            {"id" : 0, "text" : "Lincoln, Nebraska"},
+            {"id" : 1, "text" : "Vancouver, B.C."},
+            {"id" : 2, "text" : "Miami, Florida"},
+            {"id" : 3, "text" : "San Diego, California"}
         ],
         "correct" : 2
     },
@@ -14,39 +14,51 @@
         "answers":  [
             {"id" : 0, "text" : "Bangkok, Thailand"},
             {"id" : 1, "text" : "Osaka, Japan"},
-            {"id" : 2, "text" : "Busan, South Korea"},
-            {"id" : 3, "text" : "Phnom Penh, Cambodia"}
+            {"id" : 2, "text" : "Phnom Penh, Cambodia"},
+            {"id" : 3, "text" : "Busan, South Korea"}
+
         ],
         "correct" : 3
     },
     {
-        "question" : "Where in the World is this third question?",
+        "question" : "/images/eiffel.JPG",
         "answers":  [
-            {"id" : 0, "text" : "Bangkok, Thailand"},
-            {"id" : 1, "text" : "Osaka, Japan"},
-            {"id" : 2, "text" : "Busan, South Korea"},
-            {"id" : 3, "text" : "Phnom Penh, Cambodia"}
+            {"id" : 0, "text" : "Las Vegas, Nevada"},
+            {"id" : 1, "text" : "Budapest, Hungary"},
+            {"id" : 2, "text" : "Paris, France"},
+            {"id" : 3, "text" : "Goa, India"}
         ],
-        "correct" : 0
+        "correct" : 2,
+        "feedback": "Ok, no more freebies!"
     },
     {
-        "question" : "Where in the World is this 4th?",
+        "question" : "/images/sanibel.jpeg",
         "answers":  [
             {"id" : 0, "text" : "Bangkok, Thailand"},
-            {"id" : 1, "text" : "Osaka, Japan"},
-            {"id" : 2, "text" : "Busan, South Korea"},
-            {"id" : 3, "text" : "Phnom Penh, Cambodia"}
+            {"id" : 1, "text" : "Sanibel Island, Florida"},
+            {"id" : 2, "text" : "Cozumel, Mexico"},
+            {"id" : 3, "text" : "Honolulu, Hawaii"}
         ],
         "correct" : 1
     },
     {
-        "question" : "Where in the World is this 5th?",
+        "question" : "/images/osorno.jpeg",
         "answers":  [
-            {"id" : 0, "text" : "Bangkok, Thailand"},
-            {"id" : 1, "text" : "Osaka, Japan"},
+            {"id" : 0, "text" : "Mt. Fuji, Japan"},
+            {"id" : 1, "text" : "Volcano Osorno, Chile"},
+            {"id" : 2, "text" : "Mt. Etna, Italy"},
+            {"id" : 3, "text" : "Eyjafjallajökull, Iceland"}
+        ],
+        "correct" : 1
+    },
+    {
+        "question" : "/images/kaikoura.jpg",
+        "answers":  [
+            {"id" : 0, "text" : "Kaikoura, New Zealand"},
+            {"id" : 1, "text" : "Anchorage, Alaska"},
             {"id" : 2, "text" : "Busan, South Korea"},
             {"id" : 3, "text" : "Phnom Penh, Cambodia"}
         ],
-        "correct" : 2
+        "correct" : 0
     }
 ]
