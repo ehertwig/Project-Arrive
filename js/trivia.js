@@ -48,9 +48,9 @@
             
             var url = 'http://arriveatlast.com';
             
-            var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+'% on this Photo Trivia Quiz. Try to beat my score at '+url+'">Email a friend</a>';
+            var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+'% on this Photo Trivia Quiz. Try to beat my score at '+url+'">Email</a>';
             
-            var twitterLink = '<a class="btn tweet" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+'% on this Photo Trivia Quiz.  Try to beat my score at&amp;hashtags=PhotoTriviaQuiz&amp;url='+url+'">Tweet your score </a>';
+            var twitterLink = '<a class="btn tweet" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+'% on this Photo Trivia Quiz.  Try to beat my score at&amp;hashtags=PhotoTriviaQuiz&amp;url='+url+'">Tweet </a>';
             
             var newMarkup = emailLink + twitterLink;
             

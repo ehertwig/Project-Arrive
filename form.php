@@ -65,8 +65,9 @@ if (!$errName && !$errEmail && !$errMessage ) {
                     <div class="navbar-collapse collapse pull-right">
                         <ul class="nav navbar-nav pull-right">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="form.php">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+                        <li><a href="form.php">CONTACT</a></li>
                             <li class="dropdown">
                                 <a href="before.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria- expanded="false">BEFORE YOU GO <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -90,7 +91,7 @@ if (!$errName && !$errEmail && !$errMessage ) {
   	<div class="container form-container">
   		<div class="row">
   			<div class="col-md-6 col-md-offset-3">
-  				<h1 class="page-header text-center text-muted">Contact Me</h1>
+  				<h1 class="page-header text-center">Contact Me</h1>
                 
 				<form class="form-horizontal" role="form" method="post" action="form.php">
 					<div class="form-group">
@@ -145,6 +146,8 @@ if (!$errName && !$errEmail && !$errMessage ) {
                     <ul class="list-unstyled">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="trivia.html">TRIVIA</a></li>
+                        <li><a href="form.php">CONTACT</a></li>
                         <li><a href="pack.html">PACK LIST</a></li>
                         <li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">FUNJET VACATIONS</a></li>
                     </ul>

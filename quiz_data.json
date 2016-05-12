@@ -10,7 +10,7 @@
         "correct" : 2
     },
     {
-        "question" : "Where in the World is this?",
+        "question" : "/images/busan.jpg",
         "answers":  [
             {"id" : 0, "text" : "Bangkok, Thailand"},
             {"id" : 1, "text" : "Osaka, Japan"},
@@ -34,7 +34,7 @@
     {
         "question" : "/images/sanibel.jpeg",
         "answers":  [
-            {"id" : 0, "text" : "Bangkok, Thailand"},
+            {"id" : 0, "text" : "La Jolla, California"},
             {"id" : 1, "text" : "Sanibel Island, Florida"},
             {"id" : 2, "text" : "Cozumel, Mexico"},
             {"id" : 3, "text" : "Honolulu, Hawaii"}
@@ -56,8 +56,8 @@
         "answers":  [
             {"id" : 0, "text" : "Kaikoura, New Zealand"},
             {"id" : 1, "text" : "Anchorage, Alaska"},
-            {"id" : 2, "text" : "Busan, South Korea"},
-            {"id" : 3, "text" : "Phnom Penh, Cambodia"}
+            {"id" : 2, "text" : "Halifax, Nova Scotia"},
+            {"id" : 3, "text" : "Gary, Indiana"}
         ],
         "correct" : 0
     }
