@@ -273,7 +273,7 @@ body {
    background-position: center;
 }
 #trivia .question .answer{
-   display: inline-block;
+    display: inline-block;
     font-size: 1.1em;
     width : 260px;
     border: 2px solid rgba(238,189,102,.75);
@@ -394,8 +394,8 @@ background-color: rgba(238,189,102,.2);
     left: 40px;
 }
 
-#trivia  .intro.inactive, #trivia.active.answered {
-    left: -1350px;
+#trivia  .intro.inactive, #trivia.inactive.answered {
+    left: -1000px;
 }
 
 /*---------media queries for Trivia------------*/
@@ -408,7 +408,7 @@ background-color: rgba(238,189,102,.2);
     
     #trivia {
         width: 320px;
-       /* background-size: 320px auto;*/
+        height: 700px;
     }
     
     #trivia h1 {
@@ -427,35 +427,34 @@ background-color: rgba(238,189,102,.2);
         font-size:  2.2em;
         margin-bottom: 15px;
     }
-    #trivia .progress {
+    #trivia .status {
         width: 300px;
-        top: 110px;
-        left: 25px;
+        top: 105px;
+        left: 20px;
     }
-    #trivia .progress div {
-        width: 25px;
-        height: 25px;
-        margin-right: 20px;
-        
+    #trivia .status div {
+        margin-right: 20px;   
     }
-    #trivia .progress div::after {
+    #trivia .status div::after {
         top: -30px;
-        width: 53px;
-        height: 33px;
+        width: 40px;
+        height: 40px;
     }
     
     #trivia .intro {
         width: 300px;
-        top: 135px;
+        top: 200px;
         left: 330px;
     }
     #trivia .question {
         width: 300px;
-        top: 135px;
+        top: 160px;
         left: 330px;
     }
     #trivia .question .image{
         font-size: 1.4em;
+        height: 150px;
+        max-width: 280px;
         margin-bottom: 15px;
     }
     #trivia .question .answer {
@@ -464,8 +463,8 @@ background-color: rgba(238,189,102,.2);
         margin-bottom: 10px;
     }
     #trivia .results {
-        width: 260px;
-        top: 150px;
+        width: 270px;
+        top: 170px;
         left: 330px;
     }
     #trivia .results .share {
@@ -476,11 +475,12 @@ background-color: rgba(238,189,102,.2);
     }
     
     #trivia .active {
-        left: 25px;
+        left: 20px;
     }
-    #trivia .intro.inactive, #trivia .active.answered {
+    #trivia .intro.inactive, #trivia.inactive.answered{
         left: -650px;
     }
+    
 }
  /*-------------vacation page------------------*/
  
