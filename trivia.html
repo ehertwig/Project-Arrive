@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)http://arriveatlast.com/ -->
-<html ng-app='trivia' lang="en">
+<html  lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,6 +21,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+
+
 
 </head>
 
@@ -69,39 +72,32 @@ function googleTranslateElementInit() {
 
 
     <!--  Angular App --->
-    <section class="container trivia">
+    <section class="container trivia" ng-app="trivia">
+    
         <div id='trivia' ng-controller="QuizController">
             <h1>Where in the:<span>World?</span></h1>
-            
+
             <div class='status'>
                 <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
                  {{ (myQuestion.questionState === 'answered') ? 'answered' : 'unanswered' }}
                   {{(myQuestion.correctness === 'correct') ? 'correct' : 'incorrect'}}
-                " 
-                ng-repeat="myQuestion in myQuestions"></div>
+                " ng-repeat="myQuestion in myQuestions"></div>
             </div>
 
             <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
                 <h2>Welcome!</h2>
                 <p>Test your world knowledge through images.</p>
-                <button class="btn" ng-click = 'activeQuestion = 0'>Begin</button>
+                <button class="btn" ng-click='activeQuestion = 0'>Begin</button>
             </div>
             <div class="question 
                 {{ $index === activeQuestion ? 'active' : 'inactive'}}
-                 {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" 
-                 
-                 ng-repeat="myQuestion in myQuestions">
-                <p class='image '
-                   ng-class="{image:myQuestion.question}"
-                 ng-style="{'background-image' : 'url({{myQuestion.question}})'}"></p>
-                <p class='answer'
-                   ng-class="{selected:isSelected($parent.$index, $index),              correct:isCorrect($parent.$index, $index)
-                             }"
-                   ng-click="selectAnswer($parent.$index, $index)" 
-                   ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
-                
+                 {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myQuestion in myQuestions">
+                <p class='image ' ng-class="{image:myQuestion.question}" ng-style="{'background-image' : 'url({{myQuestion.question}})'}"></p>
+                <p class='answer' ng-class="{selected:isSelected($parent.$index, $index),              correct:isCorrect($parent.$index, $index)
+                             }" ng-click="selectAnswer($parent.$index, $index)" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+
                 <div class='feedback'>
-                    <p ng-show="myQuestion.correctness === 'correct'" >You are <strong>correct</strong>.</p>
+                    <p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong>.</p>
                     <p ng-show="myQuestion.correctness === 'incorrect'">Ooops! That is not correct.</p>
                     <p>{{myQuestion.feedback}}</p>
                     <button class='btn' ng-click="selectContinue()">Continue</button>
@@ -111,7 +107,7 @@ function googleTranslateElementInit() {
             </div>
             <div class="results {{(totalQuestions === activeQuestion) ? 'active' : 'inactive' }}">
                 <h2>Results</h2>
-                <p>You scored {{percentage}}% by correctly answering {{score}} out of  {{totalQuestions}} total questions.</p>
+                <p>You scored {{percentage}}% by correctly answering {{score}} out of {{totalQuestions}} total questions.</p>
                 <p>Use the links below to challenge your friends.</p>
                 <div class='share' ng-bind-html="createShareLinks(percentage)">
                 </div>
@@ -119,6 +115,7 @@ function googleTranslateElementInit() {
 
 
         </div>
+
 
 
     </section>
@@ -160,14 +157,12 @@ function googleTranslateElementInit() {
             </div>
         </div>
     </div>
-    <script src="js/money.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
     <script src="js/bootstrap.js"></script>
-    <script src="js/arrive.js"></script>
+    <script src="js/angular.min.js"></script>
     <script src="js/trivia.js"></script>
-
+    <script src="js/arrive.js"></script>
 
 </body>
 

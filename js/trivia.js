@@ -1,19 +1,22 @@
-(function () {
+
+
+(function() {
+
     var app = angular.module('trivia', []);
 
-    app.controller('QuizController', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
+    app.controller('QuizController', ['$scope','$http', '$sce',function($scope, $http, $sce) {
 
         $scope.score = 0;
         $scope.activeQuestion = -1;
         $scope.activeQuestionAnswered = 0;
         $scope.percentage = 0;
 
-        $http.get('quiz_data.json').then(function (quizData) {
+        $http.get('quiz_data.json').then(function(quizData) {
             $scope.myQuestions = quizData.data;
             $scope.totalQuestions = $scope.myQuestions.length;
         });
 
-        $scope.selectAnswer = function (qindex, aIndex) {
+        $scope.selectAnswer = function(qindex, aIndex) {
 
             var questionState = $scope.myQuestions[qindex].questionState;
 
@@ -31,7 +34,7 @@
                 $scope.myQuestions[qindex].questionState = 'answered';
             }
             
-           $scope.percentage = (($scope.score/$scope.totalQuestions)*100).toFixed();
+           $scope.percentage = (($scope.score/$scope.totalQuestions) * 100).toFixed();
         } 
 
         
