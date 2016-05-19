@@ -1,10 +1,10 @@
 [
     {
-        "question" : "/images/miami.jpeg",
+        "question" : "/images/sydney.JPG",
         "answers":  [
-            {"id" : 0, "text" : "Lincoln, Nebraska"},
+            {"id" : 0, "text" : "Brussels, Belgium"},
             {"id" : 1, "text" : "Vancouver, B.C."},
-            {"id" : 2, "text" : "Miami, Florida"},
+            {"id" : 2, "text" : "Sydney, Australia"},
             {"id" : 3, "text" : "San Diego, California"}
         ],
         "correct" : 2
@@ -12,9 +12,9 @@
     {
         "question" : "/images/busan.jpg",
         "answers":  [
-            {"id" : 0, "text" : "Bangkok, Thailand"},
+            {"id" : 0, "text" : "Buenos Aires, Argentina"},
             {"id" : 1, "text" : "Osaka, Japan"},
-            {"id" : 2, "text" : "Phnom Penh, Cambodia"},
+            {"id" : 2, "text" : "Cairo, Egypt"},
             {"id" : 3, "text" : "Busan, South Korea"}
 
         ],
@@ -32,11 +32,11 @@
         "feedback": "Ok, no more freebies!"
     },
     {
-        "question" : "/images/sanibel.jpeg",
+        "question" : "/images/munich3.JPG",
         "answers":  [
-            {"id" : 0, "text" : "La Jolla, California"},
-            {"id" : 1, "text" : "Sanibel Island, Florida"},
-            {"id" : 2, "text" : "Cozumel, Mexico"},
+            {"id" : 0, "text" : "Moscow, Russia"},
+            {"id" : 1, "text" : "Munich, Germany"},
+            {"id" : 2, "text" : "Barcelona, Spain"},
             {"id" : 3, "text" : "Honolulu, Hawaii"}
         ],
         "correct" : 1
@@ -46,19 +46,20 @@
         "answers":  [
             {"id" : 0, "text" : "Mt. Fuji, Japan"},
             {"id" : 1, "text" : "Volcano Osorno, Chile"},
-            {"id" : 2, "text" : "Mt. Etna, Italy"},
-            {"id" : 3, "text" : "Eyjafjallajökull, Iceland"}
+            {"id" : 2, "text" : "Mt. McKinley, Alaska"},
+            {"id" : 3, "text" : "Lincoln, Nebraska"}
         ],
         "correct" : 1
     },
     {
-        "question" : "/images/kaikoura.jpg",
+        "question" : "/images/arch.jpeg",
         "answers":  [
-            {"id" : 0, "text" : "Kaikoura, New Zealand"},
-            {"id" : 1, "text" : "Anchorage, Alaska"},
-            {"id" : 2, "text" : "Halifax, Nova Scotia"},
+            {"id" : 0, "text" : "St. Louis, Missouri"},
+            {"id" : 1, "text" : "Detroit, Michigan"},
+            {"id" : 2, "text" : "Walla Walla, Washington"},
             {"id" : 3, "text" : "Gary, Indiana"}
         ],
-        "correct" : 0
+        "correct" : 0,
+        "feedback": "Of, course!"
     }
 ]

@@ -236,12 +236,12 @@ body {
 
 #trivia .status div.on,
 #trivia .status div.answered {
-    background-color: #10195a;
+    background-color: #132186;
 }
 
 #trivia .status div.correct::after {
     top: 0px;
-    opacity: .75;
+    opacity: 1;
 }
 /*-------intro------*/
 
