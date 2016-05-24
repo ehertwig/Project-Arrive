@@ -130,19 +130,19 @@ if (!$errName && !$errEmail && !$errMessage ) {
 			</div>
 		</div>
 	</div>   
-       <div class="footer">
+        <div class="footer">
         <div class="container-full">
             <div class="row footer">
-                <div class="col-md-4 pull-left">
-                    <h4><a name = "contact"></a>Contact Me</h4>
-                    <p class='font'>
-                        <a href="http://glyphicons.com/"></a><i class="glyphicon glyphicon-plane">  Elizabeth Hertwig</i></p>
-                    <p><i class="glyphicon glyphicon-globe"> St. Louis, MO</i></p>
-                    <p><i class="glyphicon glyphicon-phone"> 314.401.5669</i></p>
-                    <p><i class="glyphicon glyphicon-envelope"> elizabeth@arriveatlast.com</i></p>
+                <div class="col-md-4 col-sm-6 pull-left">
+                    <h4><a name="contact"></a>Contact Me</h4>
+                    <p class="font">
+                        <a href="http://glyphicons.com/"><i class="glyphicon glyphicon-plane"></i></a>  Elizabeth Hertwig</p>
+                    <p><i class="glyphicon glyphicon-globe"> </i>  St. Louis, MO</p>
+                    <p><i class="glyphicon glyphicon-phone"></i>   314.401.5669</p>
+                    <p><i class="glyphicon glyphicon-envelope"></i>  elizabeth@arriveatlast.com</p>
                 </div>
-                <div class="col-md-4">
-                    <h4>Links</h4>
+                <div class=" links col-md-4 col-sm-6 col-xs-12 ">
+                    
                     <ul class="list-unstyled">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
@@ -152,7 +152,7 @@ if (!$errName && !$errEmail && !$errMessage ) {
                         <li><a href="http://www.funjet.com/default.aspx?pLCode=90473922Z3" target="_blank">FUNJET VACATIONS</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 pull-right">
+                <div class="seller-number col-md-4 col-sm-6 pull-right">
                     <ul class="list-unstyled">
                         <li>Florida Seller of Travel Ref. No. ST15578 </li>
                         <li>California Seller of Travel No. 2090937-50 </li>
@@ -164,7 +164,6 @@ if (!$errName && !$errEmail && !$errMessage ) {
             </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/arrive.js" type="text/javascript"></script>
